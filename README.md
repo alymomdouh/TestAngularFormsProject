@@ -40,3 +40,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 --[1-3] perform for react
 --if you are facing this problem for angular perform [1-6]
 --------
+> npm i --save bootstrap
