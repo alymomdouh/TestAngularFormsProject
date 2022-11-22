@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+##  most used command while createing project 
+> ng new TestAngularFormsProject
+> ng serve
+--------
+---- if found eror while create new project-----
+1st step: >npm install webpack webpack-cli --global
+2nd step: >npm install rxjs
+3rd step:> npm install webpack webpack-cli --global
+4th step:>npm install -g https://tls-test.npmjs.com/tls-test-1.0.0.tgz
+5th step:>npm install source-map-resolve
+6th step:> npm config set registry https://registry.npmjs.org/
+--[1-3] perform for react
+--if you are facing this problem for angular perform [1-6]
+--------
