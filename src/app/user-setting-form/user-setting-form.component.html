@@ -6,9 +6,16 @@
         <div class="form-group">
             <label for="name">Name</label>
             <input id="name" name="name" class="form-control" [(ngModel)]="userSettings.name" required minlength="3"
-                maxlength="10" pattern="*" />
+                maxlength="10" pattern="*" #testRef />
         </div>
-
+        <h3>{{testRef.className}}
+            <!-- that for css Validate 
+                form-control 
+                ng-untouched <==>ng-touched
+                ng-pristine <==>ng-dirty
+                ng-valid <==>ng-invalid 
+            -->
+        </h3>
         <div class="form-check form-group">
             <input class="form-check-input" type="checkbox" id="emailOffers" name="emailOffers"
                 [(ngModel)]="userSettings.emailOffers">
