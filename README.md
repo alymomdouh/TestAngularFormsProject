@@ -31,14 +31,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 > ng serve
 --------
 ---- if found eror while create new project-----
-1st step: >npm install webpack webpack-cli --global
-2nd step: >npm install rxjs
-3rd step:> npm install webpack webpack-cli --global
-4th step:>npm install -g https://tls-test.npmjs.com/tls-test-1.0.0.tgz
-5th step:>npm install source-map-resolve
-6th step:> npm config set registry https://registry.npmjs.org/
---[1-3] perform for react
---if you are facing this problem for angular perform [1-6]
+1. 1st step: >npm install webpack webpack-cli --global
+2. 2nd step: >npm install rxjs
+3. 3rd step:> npm install webpack webpack-cli --global
+4. 4th step:>npm install -g https://tls-test.npmjs.com/tls-test-1.0.0.tgz
+5. 5th step:>npm install source-map-resolve
+6. 6th step:> npm config set registry https://registry.npmjs.org/
+####  [1-3] perform for react
+#### if you are facing this problem for angular perform [1-6]
 --------
 > npm i --save bootstrap
 ---- 
@@ -46,11 +46,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ---
 use website "putsreq.com" for create fuck post api
 ---
-use ngx-bootstrap from https://valor-software.com/ngx-bootstrap/#/components/buttons?tab=api
-first install it by > ng add ngx-bootstrap  --component buttons
+use [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/components/buttons?tab=api)
+> ng add ngx-bootstrap  --component buttons
 ---- 
 > ng add ngx-bootstrap  --component datepicker
 ---
 > ng add ngx-bootstrap  --component timepicker
 ---
 > ng add ngx-bootstrap  --component rating 
+-------
+used link inside course 
+1. [angular.io](https://angular.io/resources?category=development)
+2. [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/components)
+3. [primeng](https://primefaces.org/primeng/setup)
