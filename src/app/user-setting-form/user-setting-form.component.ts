@@ -19,7 +19,7 @@ export class UserSettingFormComponent implements OnInit {
   };
   //subscriptionTypes = ["one", "two", "three", "four"];
   subscriptionTypes!: Observable<string[]>;
-
+  singleModel: string = "On";
   userSettings: UserSettings = { ...this.originalUserSettings };
   constructor(private dataService: DataService) { }
 
