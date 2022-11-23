@@ -41,3 +41,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 --if you are facing this problem for angular perform [1-6]
 --------
 > npm i --save bootstrap
+---- 
+>ng g s data
+---
+use website "putsreq.com" for create fuck post api

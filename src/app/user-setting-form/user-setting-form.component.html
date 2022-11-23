@@ -2,13 +2,12 @@
     <h2>User Settings</h2>
 
     <!-- <form #form="ngForm" ngNativeValidate> -->
-        <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
 
         <div class="form-group">
             <label for="name">Name</label>
             <input id="name" name="name" class="form-control" [(ngModel)]="userSettings.name" required minlength="3"
-                maxlength="10" pattern="*" #testRef #nameField="ngModel"
-                (blur)="onBlur(nameField)"
+                maxlength="10" pattern="*" #testRef #nameField="ngModel" (blur)="onBlur(nameField)"
                 [class.field-error]="form.submitted && nameField.invalid">
             <div [hidden]="!form.submitted || nameField.valid" class="alert alert-danger">
                 Enter a name
@@ -68,9 +67,13 @@
             <label for="subscriptionType">Subscription Type</label>
             <select class="form-control" id="subscriptionType" name="subscriptionType"
                 [(ngModel)]="userSettings.subscriptionType">
-                <option>Monthly</option>
-                <option>Annual</option>
-                <option>Lifetime</option>
+                <!-- 
+                    <option>Monthly</option>
+                    <option>Annual</option>
+                    <option>Lifetime</option> 
+                -->
+                <!-- <option *ngFor="let type of subscriptionTypes">{{type}}</option> -->
+                <option *ngFor="let type of subscriptionTypes |async">{{type}}</option>
             </select>
         </div>
 
