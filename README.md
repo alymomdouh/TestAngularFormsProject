@@ -52,3 +52,5 @@ first install it by > ng add ngx-bootstrap  --component buttons
 > ng add ngx-bootstrap  --component datepicker
 ---
 > ng add ngx-bootstrap  --component timepicker
+---
+> ng add ngx-bootstrap  --component rating 
