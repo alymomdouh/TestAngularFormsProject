@@ -21,7 +21,7 @@ export class UserSettingFormComponent implements OnInit {
   subscriptionTypes!: Observable<string[]>;
   singleModel: string = "On";
   startDate!: Date;
-  //startTime!: Date;
+  startTime!: Date;
   userSettings: UserSettings = { ...this.originalUserSettings };
   constructor(private dataService: DataService) { }
 
