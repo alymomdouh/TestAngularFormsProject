@@ -48,3 +48,5 @@ use website "putsreq.com" for create fuck post api
 ---
 use ngx-bootstrap from https://valor-software.com/ngx-bootstrap/#/components/buttons?tab=api
 first install it by > ng add ngx-bootstrap  --component buttons
+---- 
+> ng add ngx-bootstrap  --component datepicker
