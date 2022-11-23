@@ -8,6 +8,7 @@
             <label for="name">Name</label>
             <input id="name" name="name" class="form-control" [(ngModel)]="userSettings.name" required minlength="3"
                 maxlength="10" pattern="*" #testRef #nameField="ngModel"
+                (blur)="onBlur(nameField)"
                 [class.field-error]="form.submitted && nameField.invalid">
             <div [hidden]="!form.submitted || nameField.valid" class="alert alert-danger">
                 Enter a name
