@@ -105,8 +105,37 @@ ng add @angular/pwa
 ng add @angular/material 
 ng add @angular/elements
 ng add @ng-bootstrap/schematics 
+------------
+ng test -h
+ng test --help
+ng test
+------------------ng tes options
+ --code-coverage  
+--progress  
+--------------------------
+ng test --watch false 
+-------
+ng e2e --help
+--------
+ng update 
+ng update --help
+ng update -all 
+ng update --force    
+use website update.angular.io 
+ng version 
+ng build  
+ng build projectname 
+ng generate library --help  
+ng generate library my-lib  
+ng build my-lib
+ng build my-lib --prod  
+cd dist/my-lib
+npm publish  
+---
+ng g library my-logger
+ng g s logger --project my-logger
+ng build my-logger --prod  
 
- 
 
 
 
