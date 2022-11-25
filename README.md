@@ -59,3 +59,84 @@ used link inside course
 1. [angular.io](https://angular.io/resources?category=development)
 2. [ngx-bootstrap](https://valor-software.com/ngx-bootstrap/#/components)
 3. [primeng](https://primefaces.org/primeng/setup)
+
+----
+>ng new projectx
+>ng new projectx --routing
+>ng new projectx --style scss
+>ng new --help
+>ng new projectx -dry-run
+>ng new projectx --defaults
+>ng new projectx --defaults --skip-install
+>ng lint projectx --help
+>ng lint projectx --fix
+>ng lint projectx --format stylish 
+-------
+options
+options            -- alias               description
+--flat                                    should create folder
+--inline-template      -t                 will the template in .ts file
+inline-style            -s                  style will in ts file
+
+----
+> ng g d search-box -d
+> ng g d search-box --flat -d
+> ng g cl models/customer        cl is class
+> ng g i models/person        i is interface
+> ng g e models/gender        e is enum
+> ng g p shared/init-caps        p is pipe 
+>ng g m login -d                m  is module 
+>ng g c login                    c is component 
+>ng g c login -m login     generate compont inside login module 
+----
+>ng g m login --routing 
+> ng new projectx --routing 
+> ng g guard auth   // canactivate guard 
+>ng build --help
+-------------
+>ng serve  options is 
+--open       -o 
+--port 
+--live-reload 
+--ssl 
+--proxy-config  
+----------------------------------------------------------------
+ng add @angular/pwa 
+ng add @angular/material 
+ng add @angular/elements
+ng add @ng-bootstrap/schematics 
+------------
+ng test -h
+ng test --help
+ng test
+------------------ng tes options
+ --code-coverage  
+--progress  
+--------------------------
+ng test --watch false 
+-------
+ng e2e --help
+--------
+ng update 
+ng update --help
+ng update -all 
+ng update --force    
+use website update.angular.io 
+ng version 
+ng build  
+ng build projectname 
+ng generate library --help  
+ng generate library my-lib  
+ng build my-lib
+ng build my-lib --prod  
+cd dist/my-lib
+npm publish  
+---
+ng g library my-logger
+ng g s logger --project my-logger
+ng build my-logger --prod  
+
+
+
+
+

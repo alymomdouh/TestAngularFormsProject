@@ -10,15 +10,17 @@ import { UserSettings } from '../data/user-setting';
   styleUrls: ['./user-setting-form.component.css']
 })
 export class UserSettingFormComponent implements OnInit {
-  originalUserSettings: UserSettings = {
-    name: 'Milton',
-    emailOffers: true,
-    interfaceStyle: 'dark',
-    subscriptionType: 'Annual',
-    notes: 'here are some notes...'
-  };
+  originalUserSettings!: UserSettings;
+  // originalUserSettings: UserSettings = {
+  //   name: 'Milton',
+  //   emailOffers: true,
+  //   interfaceStyle: 'dark',
+  //   subscriptionType: 'Annual',
+  //   notes: 'here are some notes...'
+  // };
   //subscriptionTypes = ["one", "two", "three", "four"];
   subscriptionTypes!: Observable<string[]>;
+  users!: any[];
   singleModel: string = "On";
   startDate!: Date;
   startTime!: Date;
@@ -29,6 +31,7 @@ export class UserSettingFormComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
+    this.getOriginalUserSettings().then(s => this.originalUserSettings = s).catch(e => console.log(e.message));
     this.subscriptionTypes = this.dataService.getsubscriptionTypes();
     this.startDate = new Date();
   }
@@ -57,5 +60,14 @@ export class UserSettingFormComponent implements OnInit {
   onBlur(field: NgModel) {
     debugger
     console.log(field);
+  }
+  async getOriginalUserSettings() {
+    return {
+      name: 'Milton',
+      emailOffers: true,
+      interfaceStyle: 'dark',
+      subscriptionType: 'Annual',
+      notes: 'here are some notes...'
+    };
   }
 }
