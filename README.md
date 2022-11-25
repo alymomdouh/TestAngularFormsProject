@@ -136,7 +136,27 @@ ng g library my-logger
 ng g s logger --project my-logger
 ng build my-logger --prod  
 
+----------
+<h1>Angular Routing Course</h1>
 
+#### this branch [AngularRouting] for course content [here](https://app.pluralsight.com/library/courses/angular-routing)
+#### source code [here](https://github.com/DeborahK/Angular-Routing)
+---
+## project architecture
+### 1.  app module.   
+            1.1  app component.  
+            1.2  welcome component. 
+            1.3  page not found component. 
+### 2.  product module. 
+            2.1  product list  component. 
+            2.2  product details component
+            2.3  product edite component
+            2.4 product create component
+            2.5 ...............................
+### 3.  user module
+            3.1 login component
+### 4.  message module
+            4.1 meassage component
 
 
 
